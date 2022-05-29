@@ -1,0 +1,4 @@
+#!/bin/sh
+
+WD="$(pwd | xclip -selection clipboard)"
+st -e "cd $WD"

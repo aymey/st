@@ -40,13 +40,15 @@ dist: clean
 	rm -rf st-$(VERSION)
 
 install: st
-	git submodule init
-	git submodule update
+	#git submodule init
+	#git submodule update
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f st $(DESTDIR)$(PREFIX)/bin
 	cp -f st-copyout $(DESTDIR)$(PREFIX)/bin
+	cp -f st-openworkingdirectory $(DESTDIR)$(PREFIX)/bin
 	cp -f st-urlhandler $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-openworkingdirectory
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-copyout
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-urlhandler
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
