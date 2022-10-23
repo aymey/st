@@ -39,7 +39,7 @@ features that make it literally the best terminal emulator ever:
 You should have xlib header files and libharfbuzz build files installed.
 
 ```
-git clone https://github.com/fabianpaci/st.git
+git clone https://github.com/aymey/st.git
 cd st
 sudo make install
 ```
